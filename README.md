@@ -4,8 +4,6 @@
 
 一个用于跨平台获取硬件信息的 Flutter 插件。
 
-[English Documentation](README_EN.md)
-
 ## 功能特性
 
 - 🖥️ **CPU 信息**：型号、厂商、架构、核心数、频率

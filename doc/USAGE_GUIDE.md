@@ -1,7 +1,5 @@
 # Hardware Info Kit - 使用指南
 
-[English Version](USAGE_GUIDE_EN.md)
-
 ## 快速开始
 
 ### 1. 安装
