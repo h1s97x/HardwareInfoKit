@@ -1,5 +1,17 @@
-/// GPU/Graphics card information
+/// GPU/Graphics card information.
+///
+/// Contains information about the graphics processing unit including model,
+/// vendor, video memory, and driver version.
+///
+/// Example:
+/// ```dart
+/// final gpuInfo = await HardwareInfo.getGpuInfo();
+/// print('Model: ${gpuInfo.model}');
+/// print('Memory: ${gpuInfo.memoryGB} GB');
+/// print('Driver: ${gpuInfo.driverVersion}');
+/// ```
 class GpuInfo {
+  /// Creates a [GpuInfo] instance.
   GpuInfo({
     this.model,
     this.vendor,
@@ -17,9 +29,16 @@ class GpuInfo {
     );
   }
 
+  /// The GPU model name.
   final String? model;
+
+  /// The GPU vendor/manufacturer.
   final String? vendor;
-  final int? memory; // in bytes
+
+  /// The GPU video memory in bytes.
+  final int? memory;
+
+  /// The GPU driver version.
   final String? driverVersion;
 
   /// GPU memory in GB

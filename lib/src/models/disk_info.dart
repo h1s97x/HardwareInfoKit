@@ -1,5 +1,17 @@
-/// Disk/Storage information
+/// Disk/Storage information.
+///
+/// Contains information about disk storage including total space, free space,
+/// used space, and number of drives. Provides convenient getters for space values in GB.
+///
+/// Example:
+/// ```dart
+/// final diskInfo = await HardwareInfo.getDiskInfo();
+/// print('Total: ${diskInfo.totalSpaceGB} GB');
+/// print('Free: ${diskInfo.freeSpaceGB} GB');
+/// print('Usage: ${diskInfo.usagePercentage}%');
+/// ```
 class DiskInfo {
+  /// Creates a [DiskInfo] instance.
   DiskInfo({
     this.totalSpace,
     this.freeSpace,
@@ -32,9 +44,16 @@ class DiskInfo {
     );
   }
 
-  final int? totalSpace; // in bytes
-  final int? freeSpace; // in bytes
-  final int? usedSpace; // in bytes
+  /// Total disk space in bytes.
+  final int? totalSpace;
+
+  /// Free disk space in bytes.
+  final int? freeSpace;
+
+  /// Used disk space in bytes.
+  final int? usedSpace;
+
+  /// Number of disk drives.
   final int? driveCount;
 
   /// Total space in GB

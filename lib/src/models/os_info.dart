@@ -1,5 +1,17 @@
-/// Operating System information
+/// Operating System information.
+///
+/// Contains information about the operating system including name, version,
+/// architecture, computer name, and kernel version.
+///
+/// Example:
+/// ```dart
+/// final osInfo = await HardwareInfo.getOsInfo();
+/// print('OS: ${osInfo.name} ${osInfo.version}');
+/// print('Architecture: ${osInfo.architecture}');
+/// print('Computer: ${osInfo.computerName}');
+/// ```
 class OsInfo {
+  /// Creates an [OsInfo] instance.
   OsInfo({
     this.name,
     this.version,
@@ -19,10 +31,19 @@ class OsInfo {
     );
   }
 
+  /// The operating system name (e.g., Windows, Android).
   final String? name;
+
+  /// The operating system version.
   final String? version;
+
+  /// The system architecture (e.g., x86_64, ARM).
   final String? architecture;
+
+  /// The computer/device name.
   final String? computerName;
+
+  /// The kernel version.
   final String? kernel;
 
   Map<String, dynamic> toJson() {

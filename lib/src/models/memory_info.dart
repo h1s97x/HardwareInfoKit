@@ -1,5 +1,17 @@
-/// Memory (RAM) information
+/// Memory (RAM) information.
+///
+/// Contains information about system memory including total, available, and used memory.
+/// Provides convenient getters for memory values in GB.
+///
+/// Example:
+/// ```dart
+/// final memoryInfo = await HardwareInfo.getMemoryInfo();
+/// print('Total: ${memoryInfo.totalMemoryGB} GB');
+/// print('Available: ${memoryInfo.availableMemoryGB} GB');
+/// print('Usage: ${memoryInfo.usagePercentage}%');
+/// ```
 class MemoryInfo {
+  /// Creates a [MemoryInfo] instance.
   MemoryInfo({
     this.totalMemory,
     this.availableMemory,
@@ -47,9 +59,16 @@ class MemoryInfo {
     );
   }
 
-  final int? totalMemory; // in bytes
-  final int? availableMemory; // in bytes
-  final int? usedMemory; // in bytes
+  /// Total system memory in bytes.
+  final int? totalMemory;
+
+  /// Available system memory in bytes.
+  final int? availableMemory;
+
+  /// Used system memory in bytes.
+  final int? usedMemory;
+
+  /// Memory usage percentage (0-100).
   final double? usagePercentage;
 
   /// Total memory in GB

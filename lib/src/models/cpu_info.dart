@@ -1,5 +1,17 @@
-/// CPU/Processor information
+/// CPU/Processor information.
+///
+/// Contains detailed information about the processor including model, vendor,
+/// architecture, number of cores, frequency, and cache size.
+///
+/// Example:
+/// ```dart
+/// final cpuInfo = await HardwareInfo.getCpuInfo();
+/// print('Model: ${cpuInfo.model}');
+/// print('Cores: ${cpuInfo.logicalCores}');
+/// print('Frequency: ${cpuInfo.frequency} MHz');
+/// ```
 class CpuInfo {
+  /// Creates a [CpuInfo] instance.
   CpuInfo({
     this.model,
     this.vendor,
@@ -26,13 +38,26 @@ class CpuInfo {
     );
   }
 
+  /// The CPU model name.
   final String? model;
+
+  /// The CPU vendor/manufacturer.
   final String? vendor;
+
+  /// The CPU architecture (e.g., x86_64, ARM).
   final String? architecture;
+
+  /// The number of logical cores.
   final int? logicalCores;
+
+  /// The number of physical cores.
   final int? physicalCores;
-  final double? frequency; // in MHz
-  final int? cacheSize; // in bytes
+
+  /// The CPU frequency in MHz.
+  final double? frequency;
+
+  /// The CPU cache size in bytes.
+  final int? cacheSize;
 
   Map<String, dynamic> toJson() {
     return {

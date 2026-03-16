@@ -6,8 +6,22 @@ import 'os_info.dart';
 import 'battery_info.dart';
 import 'network_info.dart';
 
-/// Complete system hardware information
+/// Complete system hardware information containing all available hardware data.
+///
+/// This class aggregates all hardware information into a single object.
+/// It includes operating system, CPU, memory, GPU, disk, battery, and network information.
+///
+/// Example:
+/// ```dart
+/// final systemInfo = await HardwareInfo.getSystemInfo();
+/// print('CPU: ${systemInfo.cpu.model}');
+/// print('Memory: ${systemInfo.memory.totalMemoryGB} GB');
+/// print('OS: ${systemInfo.os.name}');
+/// ```
 class SystemInfo {
+  /// Creates a [SystemInfo] instance.
+  ///
+  /// All parameters except [battery] and [network] are required.
   SystemInfo({
     required this.os,
     required this.cpu,

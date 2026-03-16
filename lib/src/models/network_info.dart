@@ -1,5 +1,17 @@
-/// Network information
+/// Network information.
+///
+/// Contains information about network connectivity including IPv4 and IPv6 addresses,
+/// MAC address, and network interface name.
+///
+/// Example:
+/// ```dart
+/// final networkInfo = await HardwareInfo.getNetworkInfo();
+/// print('IPv4: ${networkInfo.ipv4}');
+/// print('MAC: ${networkInfo.macAddress}');
+/// print('Interface: ${networkInfo.interfaceName}');
+/// ```
 class NetworkInfo {
+  /// Creates a [NetworkInfo] instance.
   NetworkInfo({
     this.ipv4,
     this.ipv6,
@@ -16,9 +28,16 @@ class NetworkInfo {
     );
   }
 
+  /// The IPv4 address.
   final String? ipv4;
+
+  /// The IPv6 address.
   final String? ipv6;
+
+  /// The MAC address.
   final String? macAddress;
+
+  /// The network interface name.
   final String? interfaceName;
 
   Map<String, dynamic> toJson() {

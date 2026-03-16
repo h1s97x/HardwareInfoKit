@@ -1,5 +1,19 @@
-/// Battery information
+/// Battery information.
+///
+/// Contains information about the device battery including level, charging status,
+/// health, temperature, and voltage. Returns null if no battery is present.
+///
+/// Example:
+/// ```dart
+/// final batteryInfo = await HardwareInfo.getBatteryInfo();
+/// if (batteryInfo != null) {
+///   print('Level: ${batteryInfo.level}%');
+///   print('Charging: ${batteryInfo.isCharging}');
+///   print('Temperature: ${batteryInfo.temperature}°C');
+/// }
+/// ```
 class BatteryInfo {
+  /// Creates a [BatteryInfo] instance.
   BatteryInfo({
     this.level,
     this.isCharging,
@@ -38,11 +52,20 @@ class BatteryInfo {
     );
   }
 
-  final int? level; // 0-100
+  /// Battery level as a percentage (0-100).
+  final int? level;
+
+  /// Whether the battery is currently charging.
   final bool? isCharging;
+
+  /// Battery health status.
   final String? health;
-  final double? temperature; // in Celsius
-  final double? voltage; // in Volts
+
+  /// Battery temperature in Celsius.
+  final double? temperature;
+
+  /// Battery voltage in Volts.
+  final double? voltage;
 
   Map<String, dynamic> toJson() {
     return {
