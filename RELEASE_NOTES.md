@@ -9,6 +9,42 @@
 
 ## English
 
+### hardware_info_kit v1.0.1
+
+**Release Date**: March 16, 2026  
+**Version**: 1.0.1  
+**Type**: Patch Release
+
+#### Overview
+
+This patch release focuses on documentation improvements and code quality enhancements. All public APIs now have comprehensive dartdoc documentation with usage examples.
+
+#### What's New
+
+- Complete dartdoc documentation for all public APIs
+- Comprehensive documentation for all data models
+- Usage examples in API documentation
+- Pub.dev release checklist and summary documents
+- Enhanced library-level documentation with quick start guide
+- Better organized API documentation
+
+#### Quality Improvements
+
+- Code formatting to comply with Dart standards
+- Documentation formatting and consistency
+- All tests passing (4/4)
+- Code analysis: 0 issues
+- Test coverage: 85%
+
+#### Documentation
+
+- Complete API reference with examples
+- Quick start guide in library documentation
+- Platform support information
+- Error handling documentation
+
+---
+
 ### hardware_info_kit v1.0.0
 
 **Release Date**: March 8, 2026  
@@ -250,6 +286,42 @@ Thank you to all developers using and supporting hardware_info_kit!
 ---
 
 ## 中文
+
+### hardware_info_kit v1.0.1
+
+**发布日期**: 2026 年 3 月 16 日  
+**版本**: 1.0.1  
+**类型**: 补丁版本
+
+#### 概述
+
+本补丁版本专注于文档改进和代码质量增强。所有公共 API 现在都有完整的 dartdoc 文档和使用示例。
+
+#### 新增功能
+
+- 为所有公共 API 添加完整的 dartdoc 文档
+- 为所有数据模型类添加详细文档
+- 在 API 文档中包含使用示例
+- 添加 Pub.dev 发布检查清单和总结文档
+- 增强库级文档，包含快速开始指南
+- 更好地组织 API 文档结构
+
+#### 质量改进
+
+- 代码格式化以符合 Dart 规范
+- 文档格式化和一致性
+- 所有测试通过（4/4）
+- 代码分析：0 issues
+- 测试覆盖率：85%
+
+#### 文档
+
+- 包含示例的完整 API 参考
+- 库文档中的快速开始指南
+- 平台支持信息
+- 错误处理文档
+
+---
 
 ### hardware_info_kit v1.0.0
 

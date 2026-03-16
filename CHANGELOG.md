@@ -13,6 +13,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [1.0.1] - 2026-03-16
+
+#### Added
+
+- Complete dartdoc documentation for all public APIs
+- Comprehensive documentation for all data models
+- Usage examples in API documentation
+- Pub.dev release checklist and summary documents
+
+#### Improved
+
+- Enhanced library-level documentation with quick start guide
+- Better organized API documentation
+- Improved code examples in documentation
+
+#### Fixed
+
+- Code formatting to comply with Dart standards
+- Documentation formatting and consistency
+
 ### [1.0.0] - 2026-03-08
 
 #### Added Features
@@ -118,6 +138,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 本项目的所有重要更改都将记录在此文件中。
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
+
+### [1.0.1] - 2026-03-16
+
+#### 新增
+
+- 为所有公共 API 添加完整的 dartdoc 文档
+- 为所有数据模型类添加详细文档
+- 在 API 文档中包含使用示例
+- 添加 Pub.dev 发布检查清单和总结文档
+
+#### 改进
+
+- 增强库级文档，包含快速开始指南
+- 更好地组织 API 文档结构
+- 改进文档中的代码示例
+
+#### 修复
+
+- 代码格式化以符合 Dart 规范
+- 文档格式化和一致性
 
 ### [1.0.0] - 2026-03-08
 
